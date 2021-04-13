@@ -195,8 +195,8 @@
                         <td colspan="2"><strong>Coût</strong><br />' + (feature.properties['Coût'] !== null ? autolinker.link(feature.properties['Coût'].toLocaleString()) : '') + '</td>\
                     </tr>\
                     <tr>\
-                        <th scope="row">Subvention</th>\
-                        <td>' + (feature.properties['Subvention'] !== null ? autolinker.link(feature.properties['Subvention'].toLocaleString()) : '') + '</td>\
+                        <td colspan="2"><strong>Subvention</strong><br />' + (feature.properties['Subvention'] !== null ? autolinker.link(feature.properties['Subvention'].toLocaleString()) : '') + '</td>\
+                    </tr>\
                     </tr>\
                 </table>';
             layer.bindPopup(popupContent, {maxHeight: 400});
